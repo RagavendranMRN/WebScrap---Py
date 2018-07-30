@@ -17,9 +17,9 @@ import re
 # Generalized function
 Pass the website url you want to scrape in **pageUrl** and **your_criteria** is the condition based on which the webcrawling works  
 ###### Example
->Considering scraping of Wikipedia. Let the url be **"https://en.wikipedia.org/wiki/Web_scraping"** and if you want to crawl all the links in that particular page starts with  **"https://en.wikipedia.org/wiki/** consider it  as **your_criteria** to do so.  
+>Considering scraping of Wikipedia. Let the url be **"https://en.wikipedia.org/wiki/Web_scraping"** and if you want to crawl all the links in that particular page starts with  **"https://en.wikipedia.org/wiki/"** consider it  as **your_criteria** to do so.  
 
->What it does is, It find all the links that starts with **"https://en.wikipedia.org/wiki/** and store it in a list and scrapping goes on.
+>What it does is, It find all the links that starts with **"https://en.wikipedia.org/wiki/"** and store it in a list and scrapping goes on.
 
 ```
 scrapeurl (pageUrl):  
