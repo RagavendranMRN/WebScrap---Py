@@ -24,12 +24,11 @@ Static scraping ignores JavaScript. It fetches web pages from the server without
 Dynamic scraping uses an actual browser and lets JavaScript do its thing. Then, it queries the **Document Object Model**(DOM) to extract the content it's looking for. Sometimes we need to automate the browser by simulating a user to get the content you need.
 >**Selenium is used for Dynamic Scraping**
 
-## UserAgent
-```       
+## UserAgent   
 Web browser will send what is known as a “User Agent” for every page you access. This is a string to tell the server what kind of device we are accessing the page with.
 
 Some webpages will use the User Agent to display content that is customized to your particular browser. For example if your User Agent indicates you are using an old browser then the website may return the plain HTML version without any AJAX features, which may be easier to scrape.Some websites will automatically block certain User Agents
-```
+
 
 >You can find your own current **User Agent** [here](http://httpbin.org/get)
 
