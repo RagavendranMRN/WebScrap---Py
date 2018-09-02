@@ -18,20 +18,17 @@ This repo contains the various methods to extract data out of webpages (web scra
 
 #### Static Scraping
 Static scraping ignores JavaScript. It fetches web pages from the server without the help of a browser.We can get exactly what we see in "view page source", and then manipulate with that
->Beautiful Soup,scrappy is used for Static Scraping
+>**Beautiful Soup,scrappy is used for Static Scraping**
 
 #### Dynamic Scraping
 Dynamic scraping uses an actual browser and lets JavaScript do its thing. Then, it queries the **Document Object Model**(DOM) to extract the content it's looking for. Sometimes we need to automate the browser by simulating a user to get the content you need.
->Selenium is used for Dynamic Scraping
+>**Selenium is used for Dynamic Scraping**
 
-## Requesting with UserAgent
+## UserAgent
 ```       
-                import random  
-                headers={'User-Agent':user_agents[random.randint(0,8)]} 
-                r= requests.get(pageUrl, headers=headers)  
-                html= r.text.encode("utf8")  
-                soup = BeautifulSoup( html,'lxml')  
+Web browser will send what is known as a “User Agent” for every page you access. This is a string to tell the server what kind of device we are accessing the page with.
 
+Some webpages will use the User Agent to display content that is customized to your particular browser. For example if your User Agent indicates you are using an old browser then the website may return the plain HTML version without any AJAX features, which may be easier to scrape.Some websites will automatically block certain User Agents
 ```
 >You can also specify header as  headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"}
 
