@@ -1,5 +1,5 @@
-# WebScrap-Py
-This repo contains the script used by me to extract data out of webpages (web scraping) using a python script that I wrote using BeautifulSoup
+# Beautiful Soup
+Beautiful Soup is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree. It commonly saves programmers hours or days of work.
 
 # Introduction and Installing Package
 Beautiful Soup is a Python library for pulling data out of HTML and XML files.
