@@ -1,25 +1,17 @@
-# WebScrap-Py
-This repo contains the script used by me to extract data out of webpages (web scraping) using a python script that I wrote using BeautifulSoup
+# WebScrap in Python
+This repo contains the various methods to extract data out of webpages (web scraping) using a python script 
 
-# Introduction and Installing Package
-Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+# Different Packages
+* Beautiful Soup
+* Selenium
+* Scrappy
 
-```
-$ pip install beautifulsoup4.
-```
 
-# Package to Import
-from urllib.request import urlopen  
-from bs4 import BeautifulSoup  
-import requests  
-import re  
+###### Beautiful Soup
+>BeautifulSoup is used for extracting data points from the pages that are loaded. Beautiful Soup is quite robust and it handles nicely malformed markup.Beautiful Soup creates a **parse tree** that can be used to extract data from HTML.
 
-# Generalized function
-Pass the website url you want to scrape in **pageUrl** and **your_criteria** is the condition based on which the webcrawling works  
-###### Example
->Considering scraping of Wikipedia. Let the url be **"https://en.wikipedia.org/wiki/Web_scraping"** and if you want to crawl all the links in that particular page starts with  **"https://en.wikipedia.org/wiki/"** consider it  as **your_criteria** to do so.  
-
->What it does is, It find all the links that starts with **"https://en.wikipedia.org/wiki/"** and store it in a list and scrapping goes on.
+###### Selenium
+>Selenium is first of all a **tool writing automated tests for web applications**. It’s used for web scraping mainly because it’s beginner-friendly and if a site uses JavaScript
 
 ```
 scrapeurl (pageUrl):  
@@ -55,20 +47,9 @@ Some websites will automatically block certain User Agents, for example if your 
 
 Fortunately it is easy to set your User Agent to whatever you like by requesting with the header as follows
 
-#### UserAgents List
+# Beautiful Soup VS Selenium
 ```
-user_agents = [
-    'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11',
-    'Opera/9.25 (Windows NT 5.1; U; en)',
-    'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)',
-    'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Kubuntu)',
-    'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.142 Safari/535.19',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:8.0.1) Gecko/20100101 Firefox/8.0.1',
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.151 Safari/535.19',
-  	'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0'
-]
-
+####Static Scraping vs. Dynamic Scraping
 ```
 You can find your own current **User Agent** [here](http://httpbin.org/get)
 
