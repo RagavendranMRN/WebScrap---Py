@@ -30,10 +30,10 @@ Web browser will send what is known as a “User Agent” for every page you acc
 
 Some webpages will use the User Agent to display content that is customized to your particular browser. For example if your User Agent indicates you are using an old browser then the website may return the plain HTML version without any AJAX features, which may be easier to scrape.Some websites will automatically block certain User Agents
 ```
->You can also specify header as  headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"}
 
-# For More Information
-Learn more about the Beautiful soup at the page of [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+>You can find your own current **User Agent** [here](http://httpbin.org/get)
+
+# Lets Get Started!!!
 
 
 
