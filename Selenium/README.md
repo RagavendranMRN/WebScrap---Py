@@ -34,5 +34,5 @@ Tag Name locator is used to find the elements matching the specified Tag Name. I
 ![findelement-and-findelements-demo](https://user-images.githubusercontent.com/36659683/44990638-436aa400-afaf-11e8-960b-8a4f92cb4841.gif)
 
 ## Reference:
-Selenium Documentation - https://www.seleniumhq.org/docs/
+Selenium Documentation - https://www.seleniumhq.org/docs/<br/>
 Basic Selenium Usage - https://www.youtube.com/watch?v=bhYulVzYRng
